@@ -6,6 +6,8 @@ Then run commands
 
 cd front
 
+npm i
+
 npm run build
 
 docker-compose build
