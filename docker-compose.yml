@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: ./api
+    volumes:
+      - ./api:/var/www/html:delegated
+    ports:
+      - '8000:80'
+    hostname: lara.local
+    domainname: local
+  front:
+    build:
+      context: ./front
+    ports:
+      - '80:80'
