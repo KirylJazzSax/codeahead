@@ -6,7 +6,7 @@ services:
     volumes:
       - ./api:/var/www/html:delegated
     ports:
-      - '8000:80'
+      - '8001:80'
     hostname: lara.local
     domainname: local
   front:

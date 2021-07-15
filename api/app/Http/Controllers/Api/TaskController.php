@@ -18,6 +18,8 @@ class TaskController extends Controller
     {
         $tasks = Task::select('id', 'title', 'text', 'notification_date', 'notification_time', 'completed', 'user_id')
             ->with(['user' => fn($user) => $user->select('name', 'id')])
+            ->orderBy('notification_date', 'desc')
+            ->orderBy('notification_time', 'desc')
             ->get();
         return response()->json($tasks);
     }
