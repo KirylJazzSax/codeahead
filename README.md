@@ -1,4 +1,4 @@
-I made a mistake... <br />
+Sorry, at this moment I don't have time for to build front inside docker file :( 
 
 At this moment to make it work you have to edit .env file, set you ip.
 
